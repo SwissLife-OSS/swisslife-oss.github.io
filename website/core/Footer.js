@@ -27,15 +27,9 @@ class Footer extends React.Component {
         <section className="sitemap">
           <div>
             <h3>Docs</h3>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
-            </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
-            </a>
+            <a href="https://swisslife-oss.github.io/snapshooter">
+             Snapshooter
+            </a>            
           </div>
           <div>
             <h3>Community</h3>
