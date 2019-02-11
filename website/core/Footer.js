@@ -33,6 +33,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <h3>Community</h3>
+            <a href="https://swisslife-oss.github.io/cla">Contributor License Agreements</a>
             <a href="https://discordapp.com/">Project Chat</a>
             <a
               href="https://twitter.com/"

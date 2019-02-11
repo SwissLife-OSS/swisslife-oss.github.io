@@ -26,7 +26,6 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { page: 'cla', label: 'CLA' },
     { blog: true, label: 'Blog' },
   ],
 
