@@ -1,21 +1,9 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// See https://docusaurus.io/docs/site-config for all the possible
-// site configuration options.
-
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    caption: 'Swiss Life',
     image: '/img/logo_sl_oss.svg',
-    infoLink: 'https://www.facebook.com',
+    infoLink: 'https://SwissLife-OSS.github.io',
     pinned: true,
   },
 ];
@@ -29,16 +17,17 @@ const siteConfig = {
   url: 'https://SwissLife-OSS.github.io',
   baseUrl: '/',
 
+  //google analytics
+  gaTrackingId: "fooBar",
+
   // Used for publishing and more
   projectName: 'swisslife-oss.github.io',
   organizationName: 'SwissLife-OSS',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    { page: 'cla', label: 'CLA' },
+    { blog: true, label: 'Blog' },
   ],
 
   // If you have users set above, you add it here:
@@ -54,21 +43,6 @@ const siteConfig = {
     primaryColor: '#000000',
     secondaryColor: '#ffffff',
   },
-
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
-
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Swiss Life Developer`,
 
@@ -89,15 +63,16 @@ const siteConfig = {
   ogImage: 'img/logo_sl_oss.svg',
   twitterImage: 'img/logo_sl_oss.svg',
 
+  // direct editing of docs
+  editUrl: "https://github.com/SwissLife-OSS/swisslife-oss.github.io/edit/source/docs/",
+
+
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
 
   // Show documentation's last update time.
   // enableUpdateTime: true,
-
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/SwissLife-OSS/swisslife-oss.github.io',
 };
 
 module.exports = siteConfig;
