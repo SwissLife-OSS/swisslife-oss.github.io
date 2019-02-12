@@ -224,18 +224,24 @@ class Index extends React.Component {
       );
     };
 
-
+    const Underconstruction = () => {
+      return (
+        <h1 style={{textAlign:'center', margin: '20px'}}>Under construction - coming soon!</h1>
+      );
+    }
+    
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Snapshooter />
-          {/*<Features />
-          <FeatureCallout />*/}
+          <Underconstruction />
+          {/*<Snapshooter />
+          <Features />
+          <FeatureCallout />
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
+          <Showcase />*/}
         </div>
       </div>
     );

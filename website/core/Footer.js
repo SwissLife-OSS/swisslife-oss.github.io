@@ -24,7 +24,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="nav-footer" id="footer">
-        <section className="sitemap">
+        <section className="sitemap" style={{display: 'none'}}>
           <div>
             <h3>Docs</h3>
             <a href="https://swisslife-oss.github.io/snapshooter">
