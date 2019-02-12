@@ -30,6 +30,10 @@ body {
     padding-bottom: 4px;
     border-bottom: 1px solid #f4f4f4;
 }
+.fixedHeaderContainer header .headerTitleWithLogo {
+    white-space: nowrap;
+}
+
 .fixedHeaderContainer a, .navigationWrapper .slidingNav .nav-site a {
     color: rgb(53, 53, 53);
     font-weight: 500;
@@ -115,6 +119,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav-footer h3 {
     color: #ffffff;
 }
+.copyright {
+    padding-bottom: 20px;
+}
 
 .hljs {
     background-color: #eaeaea;
@@ -122,6 +129,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+    .headerTitleWithLogo {
+        display:  block !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
