@@ -18,7 +18,7 @@ const siteConfig = {
   baseUrl: '/',
 
   //google analytics
-  gaTrackingId: "fooBar",
+  gaTrackingId: "UA-134342473-1",
 
   // Used for publishing and more
   projectName: 'swisslife-oss.github.io',
