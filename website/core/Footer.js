@@ -28,6 +28,7 @@ class Footer extends React.Component {
           <div>
             <h3>Community</h3>
             <a href={this.pageUrl("cla")}>Contributor License Agreements</a>
+            <a href={this.pageUrl("coc")}>Code of Conduct</a>
           </div>
         </section>
         <a
