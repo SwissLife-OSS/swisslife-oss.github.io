@@ -6,7 +6,6 @@ const Container = CompLibrary.Container;
 
 class Users extends React.Component {
   render() {
-    
     return (
       <div className="mainContainer">
         <Container padding={['bottom', 'top']}>
@@ -16,11 +15,7 @@ class Users extends React.Component {
               <p>This is our Contributor License Agreement</p>
             </div>
             <div>
-                FOO
-                $vsjfkldsa
-                fds
-                afdsa
-                
+              <script src="https://gist.github.com/swisslife-bot/6a7e35aeb9f45f62a356b10ee488def4.js"></script>
             </div>
           </div>
         </Container>

@@ -24,6 +24,32 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="nav-footer" id="footer">
+        <section className="sitemap">
+          <div>
+            <h3>Community</h3>
+            <a href={this.pageUrl("cla")}>Contributor License Agreements</a>
+          </div>
+        </section>
+        <a
+          href={this.props.config.url}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="fbOpenSource">
+          <img
+            src={`${this.props.config.baseUrl}img/logo_sl_oss_inverted.svg`}
+            alt="Swiss Life OSS"
+            height="45"
+          />
+          <span className="projectTitleInverted">Swiss Life | OSS</span>
+        </a>
+        <section className="copyright">{this.props.config.copyright}</section>
+      </footer>
+    );
+  }
+  /*
+  render() {
+    return (
+      <footer className="nav-footer" id="footer">
         <section className="sitemap" style={{display: 'none'}}>
           <div>
             <h3>Docs</h3>
@@ -63,7 +89,7 @@ class Footer extends React.Component {
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
-  }
+  }*/
 }
 
 module.exports = Footer;
