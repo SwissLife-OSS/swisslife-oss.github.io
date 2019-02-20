@@ -235,8 +235,8 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Underconstruction />
-          <Snapshooter />
-          {/*<Features />
+          {/*<<Snapshooter />
+          Features />
           <FeatureCallout />
           <LearnHow />
           <TryOut />

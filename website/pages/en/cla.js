@@ -10,12 +10,12 @@ class Users extends React.Component {
       <div className="mainContainer">
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
+            {/*
             <div className="prose">
               <h1>Contributor License Agreement</h1>
             </div>
-            <div>
-              <script src="https://gist.github.com/swisslife-bot/6a7e35aeb9f45f62a356b10ee488def4.js"></script>
-            </div>
+            */}
+            <script src="https://gist.github.com/swisslife-bot/6a7e35aeb9f45f62a356b10ee488def4.js"></script>
           </div>
         </Container>
       </div>
