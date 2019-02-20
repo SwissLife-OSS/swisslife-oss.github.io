@@ -229,14 +229,14 @@ class Index extends React.Component {
         <h1 style={{textAlign:'center', margin: '20px'}}>Under construction - coming soon!</h1>
       );
     }
-    
+
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Underconstruction />
-          {/*<Snapshooter />
-          <Features />
+          <Snapshooter />
+          {/*<Features />
           <FeatureCallout />
           <LearnHow />
           <TryOut />
