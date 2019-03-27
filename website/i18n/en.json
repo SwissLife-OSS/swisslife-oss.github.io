@@ -5,7 +5,10 @@
     "previous": "Previous",
     "tagline": "Open source project from Swiss Life",
     "docs": {},
-    "links": {},
+    "links": {
+      "Blog": "Blog",
+      "GitHub": "GitHub"
+    },
     "categories": {
       "Docusaurus": "Docusaurus",
       "First Category": "First Category",

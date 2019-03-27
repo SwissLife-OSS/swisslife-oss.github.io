@@ -1,17 +1,18 @@
 /* your custom css */
-@font-face{
-    font-family:"Legacy Serif ITC Book";
-    src:url("../fonts/737652.eot?#iefix");
-    src:url("../fonts/737652.eot?#iefix") format("eot"),
-      url("../fonts/737652.woff2") format("woff2"),
-      url("../fonts/737652.woff") format("woff"),
-      url("../fonts/737652.ttf") format("truetype"),
-      url("../fonts/737652.svg#2db8ca99_c4a3_4aa1_bfbb_597104667eda") format("svg");
+@font-face {
+    font-family: "Legacy Serif ITC Book";
+    src: url("../fonts/737652.eot?#iefix");
+    src: url("../fonts/737652.eot?#iefix") format("eot"),
+        url("../fonts/737652.woff2") format("woff2"),
+        url("../fonts/737652.woff") format("woff"),
+        url("../fonts/737652.ttf") format("truetype"),
+        url("../fonts/737652.svg#2db8ca99_c4a3_4aa1_bfbb_597104667eda") format("svg");
 }
-@font-face{
-    font-family:"Legacy Serif ITC Italic";
-    src:url("../fonts/737655.eot?#iefix");
-    src:url("../fonts/737655.eot?#iefix") format("eot"),
+
+@font-face {
+    font-family: "Legacy Serif ITC Italic";
+    src: url("../fonts/737655.eot?#iefix");
+    src: url("../fonts/737655.eot?#iefix") format("eot"),
         url("../fonts/737655.woff2") format("woff2"),
         url("../fonts/737655.woff") format("woff"),
         url("../fonts/737655.ttf") format("truetype"),
@@ -19,7 +20,7 @@
 }
 
 body {
-    font-family: "Calibri W02 Light",Arial,Helvetica,sans-serif;
+    font-family: "Calibri W02 Light", Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     font-size: 16px;
     line-height: 22px;
@@ -30,21 +31,26 @@ body {
     padding-bottom: 4px;
     border-bottom: 1px solid #f4f4f4;
 }
+
 .fixedHeaderContainer header .headerTitleWithLogo {
     white-space: nowrap;
 }
 
-.fixedHeaderContainer a, .navigationWrapper .slidingNav .nav-site a {
+.fixedHeaderContainer a,
+.navigationWrapper .slidingNav .nav-site a {
     color: rgb(53, 53, 53);
     font-weight: 500;
     padding-left: 16px;
     padding-right: 16px;
     transition: color 0.2s ease-in-out 0s;
 }
-.fixedHeaderContainer a:hover, .navigationWrapper .slidingNav .nav-site a:hover {
-    color:#000000;
+
+.fixedHeaderContainer a:hover,
+.navigationWrapper .slidingNav .nav-site a:hover {
+    color: #000000;
     background-color: transparent;
 }
+
 .navigationWrapper .slidingNav .nav-site a .logo {
     height: 29px;
 }
@@ -53,7 +59,10 @@ body {
     background-color: #ffffff;
 }
 
-.navigationSlider .slidingNav ul li a:focus, .navigationSlider .slidingNav ul li a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive a, .navigationSlider .slidingNav ul li.siteNavGroupActive a {
+.navigationSlider .slidingNav ul li a:focus,
+.navigationSlider .slidingNav ul li a:hover,
+.navigationSlider .slidingNav ul li.siteNavItemActive a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive a {
     color: #ffffff;
 }
 
@@ -62,12 +71,23 @@ body {
     background: url("../img/bg_motherboard.jpg") center center repeat-x;
     color: #ffffff;
 }
+
 .homeContainer .projectTitle {
     color: #ffffff;
-    text-shadow: 0 0 7px rgba(0,0,0,0.4);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
 }
 
-h1, h2, h3, h4, h5, h6 {
+.mainContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Legacy Serif ITC Book;
     font-weight: normal;
 }
@@ -86,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     border: none;
 }
+
 .button.primary:hover {
     background-color: #a11c36;
 }
@@ -108,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 .blockImage img {
     height: 200px;
 }
+
 .container .wrapper .imageAlignSide p {
     text-align: left;
 }
@@ -116,9 +138,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #353535;
     padding: 0 20px;
 }
+
 .nav-footer h3 {
     color: #ffffff;
 }
+
 .copyright {
     padding-bottom: 20px;
 }
@@ -130,26 +154,26 @@ h1, h2, h3, h4, h5, h6 {
 .gist {
     background-color: #ffffff;
 }
+
 .gist .gist-file {
     border: none !important;
     padding: 40px;
 }
 
+.productShowcaseSection {
+    background-color: #ddd
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
     .headerTitleWithLogo {
-        display:  block !important;
+        display: block !important;
     }
 }
 
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
 
-@media only screen and (max-width: 1023px) {
-}
+@media only screen and (max-width: 1023px) {}
 
-@media only screen and (min-width: 1400px) {
-}
+@media only screen and (min-width: 1400px) {}
 
-@media only screen and (min-width: 1500px) {
-}
+@media only screen and (min-width: 1500px) {}

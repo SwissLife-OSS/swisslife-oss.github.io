@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+const React = require("react");
 
-const CompLibrary = require('../../core/CompLibrary.js');
+const CompLibrary = require("../../core/CompLibrary.js");
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
@@ -15,10 +15,10 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const { siteConfig, language = "" } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
@@ -78,14 +78,15 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = "" } = this.props;
+    const { baseUrl } = siteConfig;
 
     const Block = props => (
       <Container
-        padding={['bottom', 'top']}
+        padding={["bottom", "top"]}
         id={props.id}
-        background={props.background}>
+        background={props.background}
+      >
         <GridBlock
           align="center"
           contents={props.children}
@@ -97,7 +98,8 @@ class Index extends React.Component {
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{ textAlign: "center" }}
+      >
         <h2>Feature Callout</h2>
         <MarkdownBlock>These are features of this project</MarkdownBlock>
       </div>
@@ -107,11 +109,11 @@ class Index extends React.Component {
       <Block id="try">
         {[
           {
-            content: 'Talk about trying this out',
+            content: "Talk about trying this out",
             image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: 'left',
-            title: 'Try it Out',
-          },
+            imageAlign: "left",
+            title: "Try it Out"
+          }
         ]}
       </Block>
     );
@@ -121,11 +123,11 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
+              "This is another description of how this project is useful",
             image: `${baseUrl}img/logo_sl_oss_inverted.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
+            imageAlign: "right",
+            title: "Description"
+          }
         ]}
       </Block>
     );
@@ -134,11 +136,11 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Talk about learning how to use this',
+            content: "Talk about learning how to use this",
             image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: 'right',
-            title: 'Learn How',
-          },
+            imageAlign: "right",
+            title: "Learn How"
+          }
         ]}
       </Block>
     );
@@ -147,36 +149,42 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
+            content: "This is the content of my feature",
             image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
+            imageAlign: "top",
+            title: "Feature One"
           },
           {
-            content: 'The content of my second feature',
+            content: "The content of my second feature",
             image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
-          },
+            imageAlign: "top",
+            title: "Feature Two"
+          }
         ]}
       </Block>
     );
 
-    {/*
-    const Snapshooter = () => (
-      <Block background="light">
-        {[
-          {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/logo_sl_snapshooter.svg`,
-            imageAlign: 'top',
-            title: 'Snapshooter',
-            link: 'View project',
-          },
-        ]}
-      </Block>
+    const SnapshooterDescription = () => (
+      <a href="https://swisslife-oss.github.io/snapshooter/">
+        <Block background="light">
+          {[
+            {
+              content: `Snapshooter is a flexible .Net testing tool to simplify the validation
+            of your test results in your unit / integration tests. It creates
+            simply a snapshot of your test result and stores it alongside of your test. 
+            When the test is executed again, the snapshooter will compare
+            the actual test result with the stored snapshot. If both are
+            the same, the test will pass.`,
+              image: `${baseUrl}img/logo_sl_snapshooter.svg`,
+
+              imageAlign: "left",
+              title: `Snapshooter`,
+              link: "https://swisslife-oss.github.io/snapshooter/"
+            }
+          ]}
+        </Block>
+      </a>
     );
-    */}
 
     const Snapshooter = () => {
       const Logo = props => (
@@ -190,7 +198,19 @@ class Index extends React.Component {
           <Logo img_src={`${baseUrl}img/logo_sl_snapshooter.svg`} />
           <h2>Snapshooter</h2>
           <p>This is the content of my feature</p>
-          <a className="button primary" href="#">View project</a>
+          <a
+            className="button primary"
+            href="https://swisslife-oss.github.io/snapshooter/"
+          >
+            Github
+          </a>
+          &nbsp;
+          <a
+            className="button primary"
+            href="https://swisslife-oss.github.io/snapshooter/"
+          >
+            Website
+          </a>
         </div>
       );
     };
@@ -208,15 +228,15 @@ class Index extends React.Component {
           </a>
         ));
 
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
+      const pageUrl = page => baseUrl + (language ? `${language}/` : "") + page;
 
       return (
-        <div className="productShowcaseSection paddingBottom">
+        <div className="productShowcaseSection paddingBottom paddingTop">
           <h2>Who is Using This?</h2>
           <p>This project is used by all these people</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
+            <a className="button" href={pageUrl("users.html")}>
               More {siteConfig.title} Users
             </a>
           </div>
@@ -224,24 +244,19 @@ class Index extends React.Component {
       );
     };
 
-    const Underconstruction = () => {
-      return (
-        <h1 style={{textAlign:'center', margin: '20px'}}>Under construction - coming soon!</h1>
-      );
-    }
-
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Underconstruction />
-          {/*<<Snapshooter />
-          Features />
+          {/* <Snapshooter /> */}
+          <SnapshooterDescription />
+
+          {/* <Features />
           <FeatureCallout />
           <LearnHow />
           <TryOut />
-          <Description />
-          <Showcase />*/}
+          <Description /> */}
+          <Showcase />
         </div>
       </div>
     );
