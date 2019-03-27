@@ -1,21 +1,27 @@
 // List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'Swiss Life',
-    image: '/img/logo_sl_oss.svg',
-    infoLink: 'https://SwissLife-OSS.github.io',
-    pinned: true,
-  },
-];
+const users = [{
+  caption: 'Swiss Life',
+  image: '/img/logo_sl_oss.svg',
+  infoLink: 'https://SwissLife-OSS.github.io',
+  pinned: true,
+}, ];
+
+const basicUrl = 'https://swisslife-oss.github.io';
+const githubBaseUrl = 'https://github.com/SwissLife-OSS';
+const repoUrl = githubBaseUrl + '/swisslife-oss.github.io';
+const snapshooterUrl = basicUrl + "/snapshooter/";
 
 const siteConfig = {
   title: 'Swiss Life | OSS', // Title for your website.
   tagline: 'Open source project from Swiss Life',
-  url: 'https://swisslife-oss.github.io', // Your website URL
+  url: basicUrl, // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
-  url: 'https://SwissLife-OSS.github.io',
+  url: basicUrl,
   baseUrl: '/',
+
+  snapshooterUrl,
+  githubBaseUrl,
 
   //google analytics
   gaTrackingId: "UA-134342473-1",
@@ -25,9 +31,15 @@ const siteConfig = {
   organizationName: 'SwissLife-OSS',
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
-    //{ blog: true, label: 'Blog' },
-    //{ page: 'cla', label: 'CLA' },
+  headerLinks: [{
+      blog: true,
+      label: 'Blog'
+    },
+    {
+      href: githubBaseUrl,
+      label: 'GitHub',
+      external: true
+    },
   ],
 
   // If you have users set above, you add it here:
@@ -72,7 +84,7 @@ const siteConfig = {
 
   // Show documentation's last update time.
   // enableUpdateTime: true,
-  repoUrl: 'https://github.com/SwissLife-OSS/swisslife-oss.github.io',
+  repoUrl,
 };
 
 module.exports = siteConfig;

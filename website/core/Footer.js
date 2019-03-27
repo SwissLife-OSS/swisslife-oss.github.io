@@ -5,20 +5,25 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+const React = require("react");
 
 class Footer extends React.Component {
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
     return `${baseUrl}${docsPart}${langPart}${doc}`;
   }
 
   pageUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? `${language}/` : '') + doc;
+    return baseUrl + (language ? `${language}/` : "") + doc;
+  }
+
+  snapshooterUrl() {
+    const snapshooterUrl = this.props.config.snapshooterUrl;
+    return snapshooterUrl;
   }
 
   render() {
@@ -26,16 +31,27 @@ class Footer extends React.Component {
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
           <div>
+            <h3>Projects</h3>
+            <a href={this.snapshooterUrl()}>Snapshooter</a>
+          </div>
+          <div>
             <h3>Community</h3>
             <a href={this.pageUrl("cla")}>Contributor License Agreements</a>
             <a href={this.pageUrl("coc")}>Code of Conduct</a>
+            <a href={this.pageUrl("blog")}>Twitter</a>
+          </div>
+          <div>
+            <h3>More</h3>
+            <a href={this.pageUrl("blog")}>Blog</a>
+            <a href={this.props.config.githubBaseUrl}>GitHub</a>
           </div>
         </section>
         <a
           href={this.props.config.url}
           target="_blank"
           rel="noreferrer noopener"
-          className="fbOpenSource">
+          className="fbOpenSource"
+        >
           <img
             src={`${this.props.config.baseUrl}img/logo_sl_oss_inverted.svg`}
             alt="Swiss Life OSS"
