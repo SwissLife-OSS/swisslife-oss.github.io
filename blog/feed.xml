@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>Swiss Life | OSS Blog</title>
-        <link>https://SwissLife-OSS.github.io/blog</link>
+        <link>https://swisslife-oss.github.io/blog</link>
         <description>The best place to stay up-to-date with the latest Swiss Life | OSS news and events.</description>
         <lastBuildDate>Thu, 28 Feb 2019 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
             <title>Swiss Life | OSS Blog</title>
-            <url>https://SwissLife-OSS.github.io/img/logo_sl_oss.svg</url>
-            <link>https://SwissLife-OSS.github.io/blog</link>
+            <url>https://swisslife-oss.github.io/img/logo_sl_oss.svg</url>
+            <link>https://swisslife-oss.github.io/blog</link>
         </image>
         <copyright>Copyright © 2019 Swiss Life Developer</copyright>
         <item>
             <title><![CDATA[We start making OSS]]></title>
-            <link>https://SwissLife-OSS.github.io/blog/2019/02/28/we-start-making-oss.html</link>
-            <guid>https://SwissLife-OSS.github.io/blog/2019/02/28/we-start-making-oss.html</guid>
+            <link>https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss.html</link>
+            <guid>https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss.html</guid>
             <pubDate>Thu, 28 Feb 2019 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
 ]]></description>

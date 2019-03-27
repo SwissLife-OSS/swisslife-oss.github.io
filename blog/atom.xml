@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://SwissLife-OSS.github.io/blog</id>
+    <id>https://swisslife-oss.github.io/blog</id>
     <title>Swiss Life | OSS Blog</title>
     <updated>2019-02-28T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
-    <link rel="alternate" href="https://SwissLife-OSS.github.io/blog"/>
+    <link rel="alternate" href="https://swisslife-oss.github.io/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Swiss Life | OSS news and events.</subtitle>
-    <logo>https://SwissLife-OSS.github.io/img/logo_sl_oss.svg</logo>
+    <logo>https://swisslife-oss.github.io/img/logo_sl_oss.svg</logo>
     <rights>Copyright © 2019 Swiss Life Developer</rights>
     <entry>
         <title type="html"><![CDATA[We start making OSS]]></title>
-        <id>https://SwissLife-OSS.github.io/blog/2019/02/28/we-start-making-oss.html</id>
-        <link href="https://SwissLife-OSS.github.io/blog/2019/02/28/we-start-making-oss.html">
+        <id>https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss.html</id>
+        <link href="https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss.html">
         </link>
         <updated>2019-02-28T06:00:00Z</updated>
         <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
