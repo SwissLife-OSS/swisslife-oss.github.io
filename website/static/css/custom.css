@@ -26,6 +26,35 @@ body {
     line-height: 22px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Legacy Serif ITC Book;
+    font-weight: normal;
+}
+
+.button {
+    font-family: Legacy Serif ITC Book;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 15px 32px;
+}
+
+.button.primary {
+    background-color: #d82034;
+    color: #fff;
+    border: none;
+}
+
+.button.primary:hover {
+    background-color: #a11c36;
+}
+
 .fixedHeaderContainer {
     background-color: #fff;
     padding-bottom: 4px;
@@ -77,40 +106,21 @@ body {
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
 }
 
-.mainContainer {
-    padding-top: 0;
-    padding-bottom: 0;
+.homeContainer .homeWrapper {
+    margin-bottom: -36px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Legacy Serif ITC Book;
-    font-weight: normal;
+.gridBlock .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
-.button {
-    font-family: Legacy Serif ITC Book;
-    font-weight: normal;
-    text-transform: none;
-    font-size: 16px;
-    border-radius: 0;
-    padding: 15px 32px;
+.gridBlock h2 {
+    font-size: 35px !important;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
-
-.button.primary {
-    background-color: #d82034;
-    color: #fff;
-    border: none;
-}
-
-.button.primary:hover {
-    background-color: #a11c36;
-}
-
 
 .projectTitleInverted {
     color: #ffffff;
