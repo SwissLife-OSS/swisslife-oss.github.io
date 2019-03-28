@@ -165,25 +165,32 @@ class Index extends React.Component {
     );
 
     const SnapshooterDescription = () => (
-      <a href="https://swisslife-oss.github.io/snapshooter/">
-        <Block background="light">
-          {[
-            {
-              content: `Snapshooter is a flexible .Net testing tool to simplify the validation
+      <Block background="light">
+        {[
+          {
+            content: `Snapshooter is a flexible .Net testing tool to simplify the validation
             of your test results in your unit / integration tests. It creates
             simply a snapshot of your test result and stores it alongside of your test. 
             When the test is executed again, the snapshooter will compare
             the actual test result with the stored snapshot. If both are
-            the same, the test will pass.`,
-              image: `${baseUrl}img/logo_sl_snapshooter.svg`,
+            the same, the test will pass.    
+            <a
+            class="button"
+            href="https://swisslife-oss.github.io/snapshooter/">
+            Website
+          </a>
+          <a
+            class="button"
+            href="https://github.com/SwissLife-OSS/snapshooter">
+            GitHub
+          </a>`,
+            image: `${baseUrl}img/logo_sl_snapshooter.svg`,
 
-              imageAlign: "left",
-              title: `Snapshooter`,
-              link: "https://swisslife-oss.github.io/snapshooter/"
-            }
-          ]}
-        </Block>
-      </a>
+            imageAlign: "left",
+            title: `Snapshooter`
+          }
+        ]}
+      </Block>
     );
 
     const Snapshooter = () => {
