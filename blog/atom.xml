@@ -2,22 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://swisslife-oss.github.io/blog</id>
     <title>Swiss Life | OSS Blog</title>
-    <updated>2019-02-28T06:00:00Z</updated>
+    <updated>2020-03-29T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://swisslife-oss.github.io/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Swiss Life | OSS news and events.</subtitle>
     <logo>https://swisslife-oss.github.io/img/logo_sl_oss.svg</logo>
     <rights>Copyright © 2019 Swiss Life Developer</rights>
     <entry>
-        <title type="html"><![CDATA[We start making OSS]]></title>
-        <id>https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss.html</id>
-        <link href="https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss.html">
+        <title type="html"><![CDATA[Snapshooter - Mismatch Compare in Visual Studio]]></title>
+        <id>https://swisslife-oss.github.io/blog/2020/03/29/snapshooter-mismatch-in-vs.html</id>
+        <link href="https://swisslife-oss.github.io/blog/2020/03/29/snapshooter-mismatch-in-vs.html">
         </link>
-        <updated>2019-02-28T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
+        <updated>2020-03-29T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>In some cases, snapshots can get really big, for example in
+integration or system tests. Now, if you have a snapshot mismatch with several
+unequal values, it can become quiet unhandy to find them, especially if you
+have only a small error message.</p>
+<p>This is one of the reasons, why we extended the mismatch behaviour...
+Now in case of a snapshot mismatch, Snapshooter not only shows you an error message,
+it also stores the mismatching snapshot
+in the <code>__snapshot__\__mismatch__</code> folder.
+(<a href="https://swisslife-oss.github.io/snapshooter/docs/snapshot-mismatch-handling">see Snapshot Mismatch Handling</a>)<br>
+Therefore the original snapshot can be compared with the mismatching snapshot
+by a file compare tool, and you can see the differences much faster.</p>
+<p>An even faster way is in our opinion to use a Visual Studio (Code) extension for file
+comparison....</p>
 ]]></summary>
         <author>
-            <name>Swisslife OSS</name>
+            <name>Normen Scheiber</name>
+            <uri>https://github.com/nscheibe</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[First SwissLife OSS - Snapshooter]]></title>
+        <id>https://swisslife-oss.github.io/blog/2019/03/28/snapshooter-release.html</id>
+        <link href="https://swisslife-oss.github.io/blog/2019/03/28/snapshooter-release.html">
+        </link>
+        <updated>2019-03-28T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>SwissLife released its first official Open Source Software
+<a href="https://swisslife-oss.github.io/snapshooter/">Snapshooter</a>, which
+is a flexible snapshot test utility for .Net, to simplify the result validation
+within tests.</p>
+<p>Snapshooter is a tool for
+developers and testers, who want to validate their test result in a simplified
+way. Instead of writing hundreds of assert statements or dividing tests into
+many sub-tests, we are able to check the result now with one single assert.</p>
+]]></summary>
+        <author>
+            <name>Normen Scheiber</name>
+            <uri>https://github.com/nscheibe</uri>
         </author>
     </entry>
 </feed>

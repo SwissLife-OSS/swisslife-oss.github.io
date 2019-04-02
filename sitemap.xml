@@ -5,5 +5,6 @@
 <url> <loc>https://swisslife-oss.github.io/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://swisslife-oss.github.io/en/help" /> </url>
 <url> <loc>https://swisslife-oss.github.io/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://swisslife-oss.github.io/en/index" /> </url>
 <url> <loc>https://swisslife-oss.github.io/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://swisslife-oss.github.io/en/users" /> </url>
-<url> <loc>https://swisslife-oss.github.io/blog/2019/02/28/we-start-making-oss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://swisslife-oss.github.io/blog/2020/03/29/snapshooter-mismatch-in-vs</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://swisslife-oss.github.io/blog/2019/03/28/snapshooter-release</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 </urlset>
