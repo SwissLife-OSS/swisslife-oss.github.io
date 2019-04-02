@@ -85,6 +85,12 @@ const siteConfig = {
   // Show documentation's last update time.
   // enableUpdateTime: true,
   repoUrl,
+
+  blogSidebarCount: "ALL",
+  blogSidebarTitle: {
+    default: "Recent posts",
+    all: "All blog posts"
+  }
 };
 
 module.exports = siteConfig;
