@@ -4,7 +4,7 @@
         <title>Swiss Life | OSS Blog</title>
         <link>https://swisslife-oss.github.io/blog</link>
         <description>The best place to stay up-to-date with the latest Swiss Life | OSS news and events.</description>
-        <lastBuildDate>Sun, 29 Mar 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Mar 2019 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -15,9 +15,9 @@
         <copyright>Copyright © 2019 Swiss Life Developer</copyright>
         <item>
             <title><![CDATA[Snapshooter - Mismatch Compare in Visual Studio]]></title>
-            <link>https://swisslife-oss.github.io/blog/2020/03/29/snapshooter-mismatch-in-vs.html</link>
-            <guid>https://swisslife-oss.github.io/blog/2020/03/29/snapshooter-mismatch-in-vs.html</guid>
-            <pubDate>Sun, 29 Mar 2020 06:00:00 GMT</pubDate>
+            <link>https://swisslife-oss.github.io/blog/2019/03/29/snapshooter-mismatch-in-vs.html</link>
+            <guid>https://swisslife-oss.github.io/blog/2019/03/29/snapshooter-mismatch-in-vs.html</guid>
+            <pubDate>Fri, 29 Mar 2019 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>In some cases, snapshots can get really big, for example in
 integration or system tests. Now, if you have a snapshot mismatch with several
 unequal values, it can become quiet unhandy to find them, especially if you
