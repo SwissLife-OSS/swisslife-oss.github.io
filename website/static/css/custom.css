@@ -199,6 +199,7 @@ input#search_input_react {
     }
 }
 
+
 @media only screen and (min-width: 1024px) {}
 
 @media only screen and (max-width: 1023px) {}
@@ -206,3 +207,24 @@ input#search_input_react {
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1500px) {}
+
+@media only screen and (max-width: 1024px) {
+    .fixedHeaderContainer a, .navigationWrapper .slidingNav .nav-site a {
+        padding: 5px;
+    }
+    .reactNavSearchWrapper input#search_input_react {
+        background-color: rgba(53,53,53,1);
+    }
+    .nav-site.nav-site-internal {
+        border-top: 1px solid #eee;
+    }
+}
+@media only screen and (max-width: 735px) {
+    .imageAlignSide .blockImage {
+        display: block;
+        margin-right: 0;
+    }
+    .container .wrapper .alignCenter p {
+        text-align: center;
+    }
+}
