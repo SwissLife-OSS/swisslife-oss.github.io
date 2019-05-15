@@ -38,7 +38,8 @@ class Footer extends React.Component {
             <h3>Community</h3>
             <a href={this.pageUrl("cla")}>Contributor License Agreements</a>
             <a href={this.pageUrl("coc")}>Code of Conduct</a>
-            <a href={this.pageUrl("blog")}>Twitter</a>
+            <a href="https://twitter.com/swisslife_oss" target="_blank">Twitter</a>
+            <a href="https://join.slack.com/t/swisslife-oss/shared_invite/enQtNTIzODc4ODc4MzA4LWMzNzlkNmY4ODVmMzU0MWQ0NzM1YWE1M2I2ZmJmNWY0MGVjZjgyYWU3NmUzZmJjY2IwMDQxNzMyOTA2YWUzMTk" target="_blank">Slack</a>
           </div>
           <div>
             <h3>More</h3>
