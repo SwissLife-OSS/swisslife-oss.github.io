@@ -19,7 +19,6 @@ class HomeSplash extends React.Component {
     const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
     const langPart = `${language ? `${language}/` : ""}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
       <div className="homeContainer">
@@ -42,34 +41,11 @@ class HomeSplash extends React.Component {
       </h2>
     );
 
-    const PromoSection = props => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
-
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
-    );
-
     return (
       <SplashContainer>
         <Logo img_src={`${baseUrl}img/logo_sl_oss.svg`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
-          {/*
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
-          </PromoSection>
-          */}
         </div>
       </SplashContainer>
     );
@@ -93,75 +69,6 @@ class Index extends React.Component {
           layout={props.layout}
         />
       </Container>
-    );
-
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{ textAlign: "center" }}
-      >
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content: "Talk about trying this out",
-            image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: "left",
-            title: "Try it Out"
-          }
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              "This is another description of how this project is useful",
-            image: `${baseUrl}img/logo_sl_oss_inverted.svg`,
-            imageAlign: "right",
-            title: "Description"
-          }
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content: "Talk about learning how to use this",
-            image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: "right",
-            title: "Learn How"
-          }
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: "This is the content of my feature",
-            image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: "top",
-            title: "Feature One"
-          },
-          {
-            content: "The content of my second feature",
-            image: `${baseUrl}img/logo_sl_oss.svg`,
-            imageAlign: "top",
-            title: "Feature Two"
-          }
-        ]}
-      </Block>
     );
 
     const SnapshooterDescription = () => (
@@ -193,34 +100,32 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Snapshooter = () => {
-      const Logo = props => (
-        <div className="productLogo">
-          <img src={props.img_src} alt="Product Logo" />
-        </div>
-      );
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <Logo img_src={`${baseUrl}img/logo_sl_snapshooter.svg`} />
-          <h2>Snapshooter</h2>
-          <p>This is the content of my feature</p>
-          <a
-            className="button primary"
-            href="https://swisslife-oss.github.io/snapshooter/"
-          >
-            Github
-          </a>
-          &nbsp;
-          <a
-            className="button primary"
-            href="https://swisslife-oss.github.io/snapshooter/"
-          >
+    const SquadronDescription = () => (
+      <Block background="light" >
+        {[
+          {
+            content: `Squadron is a testing framework which enables
+            you to write tests against dependent services without any overhead.
+            Squadron can provide you isolation in tests with
+            Container Providers or support for all other services with Cloud Providers.
+            <a
+            class="button"
+            href="https://swisslife-oss.github.io/squadron/">
             Website
           </a>
-        </div>
-      );
-    };
+          <a
+            class="button"
+            href="https://github.com/SwissLife-OSS/squadron">
+            GitHub
+          </a>`,
+            image: `${baseUrl}img/logo_sl_squadron.png`,
+
+            imageAlign: "right",
+            title: `Squadron`
+          }
+        ]}
+      </Block>
+    );
 
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
@@ -255,14 +160,8 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          {/* <Snapshooter /> */}
           <SnapshooterDescription />
-
-          {/* <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description /> */}
+          <SquadronDescription />
           <Showcase />
         </div>
       </div>
