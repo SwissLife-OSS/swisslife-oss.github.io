@@ -21,18 +21,14 @@ class Footer extends React.Component {
     return baseUrl + (language ? `${language}/` : "") + doc;
   }
 
-  snapshooterUrl() {
-    const snapshooterUrl = this.props.config.snapshooterUrl;
-    return snapshooterUrl;
-  }
-
   render() {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
           <div>
             <h3>Projects</h3>
-            <a href={this.snapshooterUrl()}>Snapshooter</a>
+            <a href={this.props.config.snapshooterUrl}>Snapshooter</a>
+            <a href={this.props.config.squadronUrl}>Squadron</a>
           </div>
           <div>
             <h3>Community</h3>
