@@ -80,7 +80,9 @@ class Index extends React.Component {
             simply a snapshot of your test result and stores it alongside of your test. 
             When the test is executed again, the snapshooter will compare
             the actual test result with the stored snapshot. If both are
-            the same, the test will pass.    
+            the same, the test will pass.
+            <br/>
+            <br/>
             <a
             class="button"
             href="https://swisslife-oss.github.io/snapshooter/">
@@ -101,13 +103,15 @@ class Index extends React.Component {
     );
 
     const SquadronDescription = () => (
-      <Block background="light" >
+      <Block background="">
         {[
           {
             content: `Squadron is a testing framework which enables
             you to write tests against dependent services without any overhead.
             Squadron can provide you isolation in tests with
             Container Providers or support for all other services with Cloud Providers.
+            <br/>
+            <br/>
             <a
             class="button"
             href="https://swisslife-oss.github.io/squadron/">
