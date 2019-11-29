@@ -5,10 +5,10 @@ authorURL: https://github.com/https://github.com/philbir
 authorImageURL: https://avatars.githubusercontent.com/philbir
 ---
 
-Last month we have released our first Open Source version of [Squadron](https://swisslife-oss.github.io/squadron/) 🎉.
+Last month we have released our first Open Source version of [Squadron](https://swisslife-oss.github.io/squadron/). 🎉
 Squadron is a testing framework which makes ist extremely easy to write integration & system tests against resources that run in a container or in the cloud.
 
-The tool has been internally developed and was heavily used to write tests against SQL Server and MongoDB.
+The tool has been internally developed at Swiss Life and was heavily used to write tests against SQL Server and MongoDB for more than one year now.
 
 With the new Open Source version 0.5 we have now added many more providers and plan do add even more.
 
@@ -31,17 +31,17 @@ With the new Open Source version 0.5 we have now added many more providers and p
 ## Azure Cloud resources
 
 Whenever possible we recommend to use a container resource to use with Squadron, but there are some cases
-when there is no replacement for a cloud service.
-As an example is [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) where the basic features
-are available using the [Azurite](https://github.com/Azure/Azurite) emulator. But some more advanced
+when there is no container replacement for a cloud service.
+An an example is [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) where the basic features
+are available using the [Azurite](https://github.com/Azure/Azurite) emulator, but some more advanced
 features like [leases](https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob) are only
-available where using the "real" cloud service.
+available where using the "Real" cloud service.
 
 For this we have build the functionality the manage Azure services using the management API's.
 Squadron will automatically provision new resources and delete them when the test has completed.
 Another way is to use an existing azure resource and provision some entities for the test and remove
 them after. This can save some time as creating resource is usually a expensive operation.
-The first resource we have implemented for Azure is [Service Bus](../../../../squadron/docs/azure-cloud-servicebus).
+The first resource we have implemented for Azure is [Azure Service Bus](../../../../squadron/docs/azure-cloud-servicebus).
 
 <!--truncate-->
 
@@ -89,13 +89,13 @@ public class UserRepositoryTests : IClassFixture<MongoResource>
 }
 ```
 
-You can find more samples in out [docs](https://swisslife-oss.github.io/squadron/docs/quickstart).
+You can find more quick starts and samples in our [docs](https://swisslife-oss.github.io/squadron/docs/quickstart).
 
 ## Roadmap
 
 ### More resources
 
-With future releases we plan to add the following resources:
+With future releases we plan to add the following resources to squadron:
 
 - Kafka
 - RavenDB
@@ -107,14 +107,14 @@ With future releases we plan to add the following resources:
 
 The current release only supports [xUnit](https://xunit.net/) as the testing framework.
 We are now in the process of
-abstracting the initialization of resources so that it can be used framework independent.
-[NUnit](https://nunit.org/) is the next framework on our list to be supported, and of course with the new abstraction you can use Squadron in any .NET Core app.
+abstracting the initialization of resources to make it framework independent.
+[NUnit](https://nunit.org/) is the next framework on our list to be supported,
+and of course with the new abstraction you can use Squadron in any .NET Core app.
 
 ### Samples
 
-We are planing to provide a sample solution to show some more complex scenarios using Squadron.
-Especially using the [Compose Resource](https://swisslife-oss.github.io/squadron/docs/compose) and the
-Integration with Selenium tests.
+We are building a sample solution to show some more complex scenarios using Squadron.
+Especially using the [Compose Resource](https://swisslife-oss.github.io/squadron/docs/compose) and integration with Selenium tests.
 
 If you have some ideas for improvements or you'd like to see other integrations in Squadron feel free
 to create an [issue](https://github.com/SwissLife-OSS/squadron/issues) or submit a [pull request](https://github.com/SwissLife-OSS/squadron/pulls).
