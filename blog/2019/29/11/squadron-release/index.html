@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Squadron - First public release · Swiss Life | OSS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Last month we have released our first Open Source version of [Squadron](https://swisslife-oss.github.io/squadron/). 🎉"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Squadron - First public release · Swiss Life | OSS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://swisslife-oss.github.io/blog/2019/29/11/squadron-release"/><meta property="og:description" content="Last month we have released our first Open Source version of [Squadron](https://swisslife-oss.github.io/squadron/). 🎉"/><meta property="og:image" content="https://swisslife-oss.github.io/img/logo_sl_oss.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://swisslife-oss.github.io/img/logo_sl_oss.svg"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"/><link rel="alternate" type="application/atom+xml" href="https://swisslife-oss.github.io/blog/atom.xml" title="Swiss Life | OSS Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://swisslife-oss.github.io/blog/feed.xml" title="Swiss Life | OSS Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-134342473-1', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo_sl_oss.svg" alt="Swiss Life | OSS"/><h2 class="headerTitleWithLogo">Swiss Life | OSS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://github.com/SwissLife-OSS" target="_blank">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>All blog posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">All blog posts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/blog/2019/29/11/squadron-release">Squadron - First public release</a></li><li class="navListItem"><a class="navItem" href="/blog/2019/03/29/snapshooter-mismatch-in-vs">Snapshooter - Mismatch Compare in Visual Studio</a></li><li class="navListItem"><a class="navItem" href="/blog/2019/03/28/snapshooter-release">First SwissLife OSS - Snapshooter</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2019/29/11/squadron-release">Squadron - First public release</a></h1><p class="post-meta"> 11, 2019</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/https://github.com/philbir" target="_blank" rel="noreferrer noopener">Philippe Birbaum</a></p><div class="authorPhoto"><a href="https://github.com/https://github.com/philbir" target="_blank" rel="noreferrer noopener"><img src="https://avatars.githubusercontent.com/philbir" alt="Philippe Birbaum"/></a></div></div></header><div><span><p>Last month we have released our first Open Source version of <a href="https://swisslife-oss.github.io/squadron/">Squadron</a>. 🎉
+Squadron is a testing framework which makes ist extremely easy to write integration &amp; system tests against resources that run in a container or in the cloud.</p>
+<p>The tool has been internally developed at Swiss Life and was heavily used to write tests against SQL Server and MongoDB for more than one year now.</p>
+<p>With the new Open Source version 0.5 we have now added many more providers and plan do add even more.</p>
+<h2><a class="anchor" aria-hidden="true" id="supported-resources"></a><a href="#supported-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Supported resources</h2>
+<table>
+<thead>
+<tr><th>Provider</th><th>Nuget Package</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="../../../../squadron/docs/mongodb">Mongo</a></td><td><code>Squadron.MongoDb</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/mongodb-rs">Mongo Replica Set</a></td><td><code>Squadron.MongoDb</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/sqlserver.md">SQL Server</a></td><td><code>Squadron.SqlServer</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/elasticsearch">Elastic Search</a></td><td><code>Squadron.ElasticSearch</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/postgresql">PostgreSQL</a></td><td><code>Squadron.PostgreSql</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/redis">Redis</a></td><td><code>Squadron.Redis</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/rabbitmq">RabbitMQ</a></td><td><code>Squadron.RabbitMQ</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/azure-storage">Azure Storage</a></td><td><code>Squadron.AzureStorage</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/azure-cloud-servicebus">Azure ServiceBus</a></td><td><code>Squadron.AzureCloudServiceBus</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/generic-container">Generic</a></td><td><code>Squadron.Core</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/compose">Compose</a></td><td><code>Squadron.Compose</code></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="azure-cloud-resources"></a><a href="#azure-cloud-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Azure Cloud resources</h2>
+<p>Whenever possible we recommend to use a container resource to use with Squadron, but there are some cases
+when there is no container replacement for a cloud service.
+An an example is <a href="https://azure.microsoft.com/en-us/services/storage/">Azure Storage</a> where the basic features
+are available using the <a href="https://github.com/Azure/Azurite">Azurite</a> emulator, but some more advanced
+features like <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob">leases</a> are only
+available where using the &quot;Real&quot; cloud service.</p>
+<p>For this we have build the functionality the manage Azure services using the management API's.
+Squadron will automatically provision new resources and delete them when the test has completed.
+Another way is to use an existing azure resource and provision some entities for the test and remove
+them after. This can save some time as creating resource is usually a expensive operation.
+The first resource we have implemented for Azure is <a href="../../../../squadron/docs/azure-cloud-servicebus">Azure Service Bus</a>.</p>
+<!--truncate-->
+<h2><a class="anchor" aria-hidden="true" id="getting-started"></a><a href="#getting-started" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting started</h2>
+<ol>
+<li>Create a new xUnit Project</li>
+</ol>
+<pre><code class="hljs css language-bash">dotnet new xunit -name squadron-quickstart
+</code></pre>
+<ol start="2">
+<li>Install the Squadron nuget package Mongo for within your test project:</li>
+</ol>
+<pre><code class="hljs css language-bash">dotnet add package Squadron.Mongo
+</code></pre>
+<p>Inject and use the MongoResource into your test class constructor:</p>
+<pre><code class="hljs css language-csharp">public class UserRepositoryTests : IClassFixture&lt;MongoResource&gt;
+{
+    private readonly MongoResource _mongoResource;
+
+    public UserRepositoryTests(MongoResource mongoResource)
+    {
+        _mongoResource = mongoResource;
+    }
+
+    [Fact]
+    public async Task UserRepository_Add_AddedUser()
+    {
+        //arrange
+        var user = User.CreateSample();
+        IMongoDatabase db = _mongoResource.CreateDatabase();
+        var repo = new UserRepository(db);
+
+        //act
+        await repo.AddAsync(user);
+
+        //assert
+        User createdUser = await GetUserAsync(db, user.Id);
+        createdUser.Should().BeEquivalentTo(user);
+    }
+}
+</code></pre>
+<p>You can find more quick starts and samples in our <a href="https://swisslife-oss.github.io/squadron/docs/quickstart">docs</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="roadmap"></a><a href="#roadmap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Roadmap</h2>
+<h3><a class="anchor" aria-hidden="true" id="more-resources"></a><a href="#more-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>More resources</h3>
+<p>With future releases we plan to add the following resources to squadron:</p>
+<ul>
+<li>Kafka</li>
+<li>RavenDB</li>
+<li>MySQL</li>
+<li>Azure Storage</li>
+<li>Azure Event Hub</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="testing-framework-support"></a><a href="#testing-framework-support" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing framework support</h3>
+<p>The current release only supports <a href="https://xunit.net/">xUnit</a> as the testing framework.
+We are now in the process of
+abstracting the initialization of resources to make it framework independent.
+<a href="https://nunit.org/">NUnit</a> is the next framework on our list to be supported,
+and of course with the new abstraction you can use Squadron in any .NET Core app.</p>
+<h3><a class="anchor" aria-hidden="true" id="samples"></a><a href="#samples" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Samples</h3>
+<p>We are building a sample solution to show some more complex scenarios using Squadron.
+Especially using the <a href="https://swisslife-oss.github.io/squadron/docs/compose">Compose Resource</a> and integration with Selenium tests.</p>
+<p>If you have some ideas for improvements or you'd like to see other integrations in Squadron feel free
+to create an <a href="https://github.com/SwissLife-OSS/squadron/issues">issue</a> or submit a <a href="https://github.com/SwissLife-OSS/squadron/pulls">pull request</a>.</p>
+<p>You can also reach out to us using <a href="https://join.slack.com/t/swisslife-oss/shared_invite/enQtNzk1ODI1NTAyNjExLTJmM2I2ODMxZjk4ZjBhYWIzY2U3YmI1ZGU3YmVjZGI0ZjA3MDllZGYwOGMxNjAwYTExMmFiMTQwMjhmNjY5ZTY">Slack</a> channel.</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog">Recent posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#supported-resources">Supported resources</a></li><li><a href="#azure-cloud-resources">Azure Cloud resources</a></li><li><a href="#getting-started">Getting started</a></li><li><a href="#roadmap">Roadmap</a><ul class="toc-headings"><li><a href="#more-resources">More resources</a></li><li><a href="#testing-framework-support">Testing framework support</a></li><li><a href="#samples">Samples</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h3>Projects</h3><a href="https://swisslife-oss.github.io/snapshooter/">Snapshooter</a><a href="https://swisslife-oss.github.io/squadron/">Squadron</a></div><div><h3>Community</h3><a href="/cla">Contributor License Agreements</a><a href="/coc">Code of Conduct</a><a href="https://twitter.com/swisslife_oss" target="_blank">Twitter</a><a href="https://join.slack.com/t/swisslife-oss/shared_invite/enQtNzk1ODI1NTAyNjExLTJmM2I2ODMxZjk4ZjBhYWIzY2U3YmI1ZGU3YmVjZGI0ZjA3MDllZGYwOGMxNjAwYTExMmFiMTQwMjhmNjY5ZTY" target="_blank">Slack</a></div><div><h3>More</h3><a href="/blog">Blog</a><a href="https://github.com/SwissLife-OSS">GitHub</a></div></section><a href="https://swisslife-oss.github.io" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/logo_sl_oss_inverted.svg" alt="Swiss Life OSS" height="45"/><span class="projectTitleInverted">Swiss Life | OSS</span></a><section class="copyright">Copyright © 2019 Swiss Life Developer</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '39489e5eb0c1a936be6ed354c0358c41',
+                indexName: 'swisslife-oss',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

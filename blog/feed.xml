@@ -4,15 +4,57 @@
         <title>Swiss Life | OSS Blog</title>
         <link>https://swisslife-oss.github.io/blog</link>
         <description>The best place to stay up-to-date with the latest Swiss Life | OSS news and events.</description>
-        <lastBuildDate>Fri, 29 Mar 2019 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-        <generator>Feed for Node.js</generator>
+        <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>Swiss Life | OSS Blog</title>
             <url>https://swisslife-oss.github.io/img/logo_sl_oss.svg</url>
             <link>https://swisslife-oss.github.io/blog</link>
         </image>
         <copyright>Copyright © 2019 Swiss Life Developer</copyright>
+        <item>
+            <title><![CDATA[Squadron - First public release]]></title>
+            <link>https://swisslife-oss.github.io/blog/2019/29/11/squadron-release.html</link>
+            <guid>https://swisslife-oss.github.io/blog/2019/29/11/squadron-release.html</guid>
+            <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Last month we have released our first Open Source version of <a href="https://swisslife-oss.github.io/squadron/">Squadron</a>. 🎉
+Squadron is a testing framework which makes ist extremely easy to write integration &amp; system tests against resources that run in a container or in the cloud.</p>
+<p>The tool has been internally developed at Swiss Life and was heavily used to write tests against SQL Server and MongoDB for more than one year now.</p>
+<p>With the new Open Source version 0.5 we have now added many more providers and plan do add even more.</p>
+<h2><a class="anchor" aria-hidden="true" id="supported-resources"></a><a href="#supported-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Supported resources</h2>
+<table>
+<thead>
+<tr><th>Provider</th><th>Nuget Package</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="../../../../squadron/docs/mongodb">Mongo</a></td><td><code>Squadron.MongoDb</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/mongodb-rs">Mongo Replica Set</a></td><td><code>Squadron.MongoDb</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/sqlserver.md">SQL Server</a></td><td><code>Squadron.SqlServer</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/elasticsearch">Elastic Search</a></td><td><code>Squadron.ElasticSearch</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/postgresql">PostgreSQL</a></td><td><code>Squadron.PostgreSql</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/redis">Redis</a></td><td><code>Squadron.Redis</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/rabbitmq">RabbitMQ</a></td><td><code>Squadron.RabbitMQ</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/azure-storage">Azure Storage</a></td><td><code>Squadron.AzureStorage</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/azure-cloud-servicebus">Azure ServiceBus</a></td><td><code>Squadron.AzureCloudServiceBus</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/generic-container">Generic</a></td><td><code>Squadron.Core</code></td></tr>
+<tr><td><a href="../../../../squadron/docs/compose">Compose</a></td><td><code>Squadron.Compose</code></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="azure-cloud-resources"></a><a href="#azure-cloud-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Azure Cloud resources</h2>
+<p>Whenever possible we recommend to use a container resource to use with Squadron, but there are some cases
+when there is no container replacement for a cloud service.
+An an example is <a href="https://azure.microsoft.com/en-us/services/storage/">Azure Storage</a> where the basic features
+are available using the <a href="https://github.com/Azure/Azurite">Azurite</a> emulator, but some more advanced
+features like <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob">leases</a> are only
+available where using the &quot;Real&quot; cloud service.</p>
+<p>For this we have build the functionality the manage Azure services using the management API's.
+Squadron will automatically provision new resources and delete them when the test has completed.
+Another way is to use an existing azure resource and provision some entities for the test and remove
+them after. This can save some time as creating resource is usually a expensive operation.
+The first resource we have implemented for Azure is <a href="../../../../squadron/docs/azure-cloud-servicebus">Azure Service Bus</a>.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Snapshooter - Mismatch Compare in Visual Studio]]></title>
             <link>https://swisslife-oss.github.io/blog/2019/03/29/snapshooter-mismatch-in-vs.html</link>
