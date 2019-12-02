@@ -4,7 +4,7 @@
         <title>Swiss Life | OSS Blog</title>
         <link>https://swisslife-oss.github.io/blog</link>
         <description>The best place to stay up-to-date with the latest Swiss Life | OSS news and events.</description>
-        <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Nov 2019 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,9 +15,9 @@
         <copyright>Copyright © 2019 Swiss Life Developer</copyright>
         <item>
             <title><![CDATA[Squadron - First public release]]></title>
-            <link>https://swisslife-oss.github.io/blog/2019/29/11/squadron-release.html</link>
-            <guid>https://swisslife-oss.github.io/blog/2019/29/11/squadron-release.html</guid>
-            <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+            <link>https://swisslife-oss.github.io/blog/2019/11/29/squadron-release.html</link>
+            <guid>https://swisslife-oss.github.io/blog/2019/11/29/squadron-release.html</guid>
+            <pubDate>Fri, 29 Nov 2019 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>Last month we have released our first Open Source version of <a href="https://swisslife-oss.github.io/squadron/">Squadron</a>. 🎉
 Squadron is a testing framework which makes ist extremely easy to write integration &amp; system tests against resources that run in a container or in the cloud.</p>
 <p>The tool has been internally developed at Swiss Life and was heavily used to write tests against SQL Server and MongoDB for more than one year now.</p>
