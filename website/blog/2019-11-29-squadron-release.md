@@ -1,7 +1,7 @@
 ---
 title: Squadron - First public release
 author: Philippe Birbaum
-authorURL: https://github.com/https://github.com/philbir
+authorURL: https://github.com/philbir
 authorImageURL: https://avatars.githubusercontent.com/philbir
 ---
 
