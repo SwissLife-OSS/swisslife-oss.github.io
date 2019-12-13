@@ -36,10 +36,10 @@ class HomeSplash extends React.Component {
     );
 
     const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
+      <div className="projectTitle">
+        <h1>{siteConfig.title}</h1>
         <small>{siteConfig.tagline}</small>
-      </h2>
+      </div>
     );
 
     const PromoSection = props => (
@@ -222,6 +222,34 @@ class Index extends React.Component {
       );
     };
 
+    const MagnetDescription = () => (
+      <Block background="light">
+        {[
+          {
+            content: `Magnet is a powerful solution to test systems where receiving messages like Email and SMS is required.<br/>
+            <br/>
+            It makes is super easy to write Selenium tests against a Onboarding process etc.
+            <br/>
+            <br/>
+            <a
+            class="button"
+            href="https://swisslife-oss.github.io/magnet/">
+            Website
+          </a>
+          <a
+            class="button"
+            href="https://github.com/SwissLife-OSS/magnet">
+            GitHub
+          </a>`,
+            image: `${baseUrl}img/logo_sl_magnet.svg`,
+
+            imageAlign: "left",
+            title: `Magnet`
+          }
+        ]}
+      </Block>
+    );
+
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
@@ -255,14 +283,9 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          {/* <Snapshooter /> */}
           <SnapshooterDescription />
-
-          {/* <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description /> */}
+          <SquadronDescription />
+          <MagnetDescription />
           <Showcase />
         </div>
       </div>

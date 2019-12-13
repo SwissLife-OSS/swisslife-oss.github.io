@@ -33,7 +33,6 @@ h4,
 h5,
 h6 {
     font-family: Legacy Serif ITC Book;
-    font-weight: normal;
 }
 
 .button {
@@ -115,13 +114,28 @@ input#search_input_react {
     color: #ffffff;
 }
 
-.homeContainer .projectTitle {
+.homeContainer .projectTitle h1 {
     color: #ffffff;
+    font-size: 64px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 0;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+.homeContainer .projectTitle small {
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    padding-top: 15px;
+    font-family: Legacy Serif ITC Book;
 }
 
 .homeContainer .homeWrapper {
     margin-bottom: -36px;
+}
+
+.homeContainer .homeWrapper .projectLogo img {
+    max-height: 128px;
 }
 
 .gridBlock .button {
