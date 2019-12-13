@@ -11,6 +11,7 @@ const githubBaseUrl = 'https://github.com/SwissLife-OSS';
 const repoUrl = githubBaseUrl + '/swisslife-oss.github.io';
 const snapshooterUrl = basicUrl + "/snapshooter/";
 const squadronUrl = basicUrl + "/squadron/";
+const magnetUrl = basicUrl + "/magnet/";
 
 const siteConfig = {
   title: 'Swiss Life | OSS', // Title for your website.
@@ -23,6 +24,7 @@ const siteConfig = {
 
   snapshooterUrl,
   squadronUrl,
+  magnetUrl,
   githubBaseUrl,
 
   // DocSearch
