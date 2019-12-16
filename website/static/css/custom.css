@@ -21,7 +21,7 @@
 
 body {
     font-family: "Calibri W02 Light", Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
     font-size: 16px;
     line-height: 22px;
 }
@@ -112,6 +112,7 @@ input#search_input_react {
     background-color: #353535;
     background: url("../img/bg_motherboard.jpg") center center repeat-x;
     color: #ffffff;
+    background-size: cover;
 }
 
 .homeContainer .projectTitle h1 {
@@ -131,7 +132,7 @@ input#search_input_react {
 }
 
 .homeContainer .homeWrapper {
-    margin-bottom: -36px;
+    margin-bottom: -46px;
 }
 
 .homeContainer .homeWrapper .projectLogo img {
@@ -165,7 +166,7 @@ input#search_input_react {
 }
 
 .blockImage img {
-    height: 200px;
+    height: 300px;
 }
 
 .container .wrapper .imageAlignSide p {
@@ -208,7 +209,6 @@ input#search_input_react {
 .blog {
     background-color: #f4f4f4;
 }
-
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
     .headerTitleWithLogo {
