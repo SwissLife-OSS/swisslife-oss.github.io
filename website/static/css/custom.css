@@ -189,7 +189,10 @@ input#search_input_react {
 }
 
 .productShowcaseSection {
-    background-color: #ddd
+    background-color: #ddd;
+}
+.blog {
+    background-color: #f4f4f4;
 }
 
 
