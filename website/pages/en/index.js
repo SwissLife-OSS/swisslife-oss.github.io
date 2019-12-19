@@ -122,7 +122,7 @@ class Index extends React.Component {
             href="https://github.com/SwissLife-OSS/squadron">
             GitHub
           </a>`,
-            image: `${baseUrl}img/logo_sl_squadron.png`,
+            image: `${baseUrl}img/logo_splash_squadron.png`,
 
             imageAlign: "right",
             title: `Squadron`

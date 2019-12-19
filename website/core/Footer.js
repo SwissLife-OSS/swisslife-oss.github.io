@@ -29,6 +29,7 @@ class Footer extends React.Component {
             <h3>Projects</h3>
             <a href={this.props.config.snapshooterUrl}>Snapshooter</a>
             <a href={this.props.config.squadronUrl}>Squadron</a>
+            <a href={this.props.config.magnetUrl}>Magnet</a>
           </div>
           <div>
             <h3>Community</h3>
