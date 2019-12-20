@@ -241,4 +241,10 @@ input#search_input_react {
     .container .wrapper .alignCenter p {
         text-align: center;
     }
+    .imageAlignRight .blockImage {
+        flex: 500px 0 1;
+        max-width: 500px;
+        order: -1;
+        margin-left: 0;
+    }
 }
