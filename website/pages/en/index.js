@@ -103,7 +103,7 @@ class Index extends React.Component {
     );
 
     const SquadronDescription = () => (
-      <Block background="">
+      <Block>
         {[
           {
             content: `Squadron is a testing framework which enables
@@ -131,8 +131,37 @@ class Index extends React.Component {
       </Block>
     );
 
-    const MagnetDescription = () => (
+    const IdOpsDescription = () => (
       <Block background="light">
+        {[
+          {
+            content: `IdOps is a platform which enables you to create, edit
+            and publish identity server resources. IdOps can provide you
+            a central resource management tool for all your identity server
+            tenants and environments enhanced by an approval and auditing process.
+            <br/>
+            <br/>
+            <a
+            class="button"
+            href="https://swisslife-oss.github.io/idops/">
+            Website
+          </a>
+          <a
+            class="button"
+            href="https://github.com/SwissLife-OSS/idops">
+            GitHub
+          </a>`,
+            image: `${baseUrl}img/logo_sl_oss.svg`,
+
+            imageAlign: "left",
+            title: `IdOps`
+          }
+        ]}
+      </Block>
+    );
+
+    const MagnetDescription = () => (
+      <Block>
         {[
           {
             content: `Magnet is a powerful solution to test systems where receiving messages like Email and SMS is required.<br/>
@@ -152,7 +181,7 @@ class Index extends React.Component {
           </a>`,
             image: `${baseUrl}img/logo_sl_magnet.svg`,
 
-            imageAlign: "left",
+            imageAlign: "right",
             title: `Magnet`
           }
         ]}
@@ -194,6 +223,7 @@ class Index extends React.Component {
         <div className="mainContainer">
           <SnapshooterDescription />
           <SquadronDescription />
+          <IdOpsDescription />
           <MagnetDescription />
           <Showcase />
         </div>

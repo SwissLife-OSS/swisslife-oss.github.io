@@ -5,3 +5,11 @@
 .mainContainer .darkBackground h2 p {
   font-size: 30px;
 }
+
+.mainContainer {
+  padding: 0px;
+}
+
+.productShowcaseSection {
+  background: #f7f7f7;
+}

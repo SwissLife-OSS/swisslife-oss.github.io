@@ -13,6 +13,7 @@ const githubBaseUrl = "https://github.com/SwissLife-OSS";
 const repoUrl = githubBaseUrl + "/swisslife-oss.github.io";
 const snapshooterUrl = basicUrl + "/snapshooter/";
 const squadronUrl = basicUrl + "/squadron/";
+const idopsUrl = basicUrl + "/idops/";
 const magnetUrl = basicUrl + "/magnet/";
 
 const siteConfig = {
